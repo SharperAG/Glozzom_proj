@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/default.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Glozzom</a>
+        <button
+          class="navbar-toggler mr-3 bg-dark"
+          style="border: 2px solid white"
+          data-toggle="collapse"
+          data-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navBar" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link mr-4">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link mr-4">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link mr-4">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link mr-4">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link mr-4 active">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Header-->
+    <section class="header__services text-center py-5 text-white">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+          temporibus!
+        </p>
+      </div>
+    </section>
+
+    <!--form-control-->
+    <section class="contact-form my-5">
+      <div class="container">
+        <div class="row">
+          <div class="contact-form__info col-md-4">
+            <div class="p-5 card">
+              <h4>Get In Touch</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur, odio!
+              </p>
+              <h4>Address</h4>
+              <p>550 Main st, Boston MA</p>
+              <h4>Email</h4>
+              <p>test@test.com</p>
+              <h4>Phone</h4>
+              <p>(555) 555-5555</p>
+            </div>
+          </div>
+          <div class="contact-form__controls col-md-8">
+            <div class="p-4 card text-center">
+              <h4 class="controls__title">
+                Please fill out this form to contact us
+              </h4>
+              <div class="row mt-4 mb-2">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="First Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name="laststname"
+                    id="laststname"
+                    placeholder="Last Name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-2">
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <textarea
+                class="form-control my-2"
+                name="txtarea"
+                id="txtarea"
+                rows="4"
+                placeholder="Message"
+              ></textarea>
+              <button class="btn btn-outline-danger d-block mb-4">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stuff bg-dark text-light">
+      <div class="container">
+        <div class="row py-3 text-center">
+          <div class="stuff__item col-md-3">
+            <img src="/Img/person1.jpg" alt="" class="img-fluid stuff__img" />
+            <h3>Jane Doe</h3>
+            <p>Marketing Manager</p>
+          </div>
+          <div class="stuff__item col-md-3">
+            <img src="/Img/person2.jpg" alt="" class="img-fluid stuff__img" />
+            <h3>Elma Periko</h3>
+            <p>Marketing Manager</p>
+          </div>
+          <div class="stuff__item col-md-3">
+            <img src="/Img/person3.jpg" alt="" class="img-fluid stuff__img" />
+            <32>John Brown</32>
+            <p>Marketing Manager</p>
+          </div>
+          <div class="stuff__item col-md-3">
+            <img src="/Img/person4.jpg" alt="" class="img-fluid stuff__img" />
+            <h3>Mike Glue</h3>
+            <p>Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="text-light py-4 mb-0" style="background-color: black">
+      <div class="container">
+        <div class="row justify-content-center mb-0">
+          Copyright &copy; <span id="year"> </span> &nbsp; Glozzom
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

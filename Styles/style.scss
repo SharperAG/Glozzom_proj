@@ -1,0 +1,234 @@
+@import "_variables.scss";
+
+a > * {
+  cursor: pointer;
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+
+      .active {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+
+          top: 25%;
+          left: -10px;
+          width: 3px;
+          height: 50%;
+          background-color: rgb(214, 214, 214);
+        }
+      }
+    }
+  }
+}
+
+.carousel-inner {
+  color: white;
+  height: 450px;
+  width: 100%;
+  .carousel-image-1 {
+    background-image: url("../Img/image1.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+  }
+  .carousel-image-2 {
+    background-image: url("../Img/image2.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+  }
+  .carousel-image-3 {
+    background-image: url("../Img/image3.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+  }
+}
+
+#icons-sec {
+  padding: 3rem 0;
+}
+
+.ready-sec {
+  height: 175px;
+  width: 100%;
+  position: relative;
+
+  color: #fff;
+  padding: 2rem 0;
+  background-image: url("../Img/lights.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  .ready-sec-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 175px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* #video-sec {
+  min-height: 250px;
+  width: 100%;
+  position: relative;
+  background-image: url("../Img/media.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .video-sec-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .container {
+    > a {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+} */
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+//Page ABOUT
+
+.header {
+  background-image: url("../Img/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom 50px left;
+  width: 100%;
+  min-height: 200px;
+}
+
+.about {
+  .row {
+    position: relative;
+    .about__img {
+      position: relative;
+      top: -40px;
+      border-radius: 50%;
+    }
+  }
+}
+
+//Services page
+
+.header__services {
+  background-image: url("../Img/image1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  min-height: 200px;
+}
+
+.service-items {
+  color: black;
+  .card-list {
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    .card-list-item {
+      border-bottom: 1px solid gray;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.faq {
+  .box {
+    .faq__items {
+      background-color: #2d2d2d;
+      color: white;
+      border-radius: 10px;
+      > a {
+        cursor: pointer;
+      }
+      .faq__q {
+        padding-left: 20px;
+        background-color: #333333;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
+
+//blog
+
+.blog-p {
+  font-size: 12px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+  }
+}
+
+//contact
+.contact-form {
+  .controls__title {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 0.5px;
+      background-color: rgb(212, 212, 212);
+    }
+  }
+}
+
+.stuff__item {
+  .stuff__img {
+    border-radius: 50%;
+  }
+}
